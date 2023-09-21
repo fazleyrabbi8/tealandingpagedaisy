@@ -26,6 +26,8 @@
                     colors: {
                         clifford: '#da373d',
                         clifford: '#da373d',
+
+
                     }
                 }
             }
@@ -39,6 +41,12 @@
         .fontmanrope {
             font-family: 'Manrope', sans-serif;
         }
+
+        /* styles.css or styles.scss */
+
+        .custom-gradient {
+            background-image: linear-gradient(270deg, #F00 0%, #FF8938 100%);
+        }
     </style>
 
 
@@ -47,6 +55,7 @@
 </head>
 
 <body class="fontmanrope">
+    <!-- header -->
     <header class="container mx-auto">
         <div class="hero  ">
             <div class="hero-content gap-5 flex-col lg:flex-row ">
@@ -150,7 +159,7 @@
 
         </section>
         <!-- great tea section -->
-        <section class="my-12 flex gap-12 flex-col lg:flex-row">
+        <section class="my-12 flex gap-12 flex-col lg:flex-row items-center ">
             <!-- grid layout -->
 
             <div class="grid gap-8 grid-cols-1 md:grid-cols-2 flex-1">
@@ -160,7 +169,7 @@
                 </div>
 
                 <div class=" row-span-2 bg-[#E6A6231A] flex justify-center items-center px-8 py-12 rounded-lg">
-                    <img  src="images/fresh-1.png" alt="fresh-1">
+                    <img src="images/fresh-1.png" alt="fresh-1">
                 </div>
 
                 <div class=" row-span-2 bg-[#574E391A] flex justify-center items-center px-8 py-12 rounded-lg">
@@ -174,10 +183,10 @@
             </div>
             <!-- tea description -->
 
-            <div class=" flex-1">
+            <div class=" flex-1 space-y-5">
 
                 <h2 class="font-extrabold  text-5xl	">
-                    Great Tea, Freshly Presented
+                    Great Tea, Freshly <br> Presented
                 </h2>
                 <p>The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It
                     represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply
@@ -194,6 +203,50 @@
                 <p>Premium Quality that makes tea more elegant and more durable when you use it.</p>
 
             </div>
+
+        </section>
+         <!-- review -->
+
+        <section class="my-24 flex gap-12 flex-col lg:flex-row custom-gradient rounded-xl px-16 py-24  ">
+            <!-- super clients -->
+
+            <div class="space-y-5 text-white">
+                <h2 class="text-5xl  font-extrabold ">
+                    Meet Our Super
+                    <br> Clients
+
+                </h2>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.
+                </p>
+
+                <button class="btn bg-white text-orange-600">Show All
+
+                </button>
+
+            </div>
+
+            <!-- customer revieew -->
+
+            <div class=" relative p-10 bg-white rounded-lg">
+
+                <img class="absolute -top-5 -left-5 " src="images/client.png" alt="">
+
+                <p>
+                    We are providing the best and suitable home insurance services for the people who are interested to
+                    treatment
+                </p>
+
+                <h3 class="font-bold mt-5">Ilham Yuda</h3>
+                <p>
+                    Businessman
+                </p>
+
+            </div>
+
+
 
         </section>
     </main>
